@@ -4,14 +4,22 @@ $modules = [];
 foreach (['modules', 'modules/custom'] as $base) {
     $path = ROOT_PATH . '/' . $base;
 
-    foreach (scandir($path) as $dir) {
-        if ($dir[0] === '.')
-            continue;
-        if (!is_dir("$path/$dir"))
-            continue;
+    if (!is_dir($path)) {
+        continue;
+    }
 
-        if ($base === 'modules' && $dir === 'custom')
+    foreach (scandir($path) as $dir) {
+        if ($dir[0] === '.') {
             continue;
+        }
+
+        if (!is_dir("$path/$dir")) {
+            continue;
+        }
+
+        if ($base === 'modules' && $dir === 'custom') {
+            continue;
+        }
 
         $modules[] = $dir;
     }
@@ -22,8 +30,8 @@ $modules = array_unique($modules);
 $layoutData = [
     'tabelas' => $modules,
     'app' => [
-        'nome' => 'Skyline',
-        'versao' => '0.5.9'
+        'nome' => 'Skyline2',
+        'versao' => '1.0.0'
     ]
 ];
 
