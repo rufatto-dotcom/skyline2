@@ -28,7 +28,7 @@ foreach ($layoutData['tabelas'] as $tabela) {
 
 ?>
 
-<link rel="stylesheet" href="core/assets/css/indexView.php">
+<link rel="stylesheet" href="core/assets/css/indexView.css">
 
 <div class="container">
     <h1>Home</h1>
