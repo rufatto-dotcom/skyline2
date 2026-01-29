@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="core/assets/css/panels.php">
+<link rel="stylesheet" href="core/assets/css/panels.css">
 
 <div class="container-sub-listiview">
     <h2 class="sub-listiview-title"><?= $titulo ?></h2>
