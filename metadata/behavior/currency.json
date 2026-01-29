@@ -1,0 +1,12 @@
+{
+  "virtual_fields": {
+    "subtotal": {
+      "type": "number",
+      "label": "SubTotal",
+      "depends_on": ["quantidade", "preco_unitario"],
+      "calculation": "quantidade * preco_unitario",
+      "output": "total",
+    "required": true
+    }
+  }
+}

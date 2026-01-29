@@ -1,0 +1,40 @@
+    .container-sub-listiview {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .sub-listiview-title {
+        margin: 0 0 10px 0;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    .sublistiview-vision {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .sublistiview {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .sublistiview th,
+    .sublistiview td {
+        border: 1px solid #ccc;
+        padding: 6px 8px;
+        text-align: left;
+    }
+
+    .sublistiview thead {
+        background-color: #f0f0f0;
+    }
+
+    .sublistiview tbody tr:nth-child(even) {
+        background-color: #fafafa;
+    }

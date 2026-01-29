@@ -1,0 +1,219 @@
+[2025-12-11 21:36:36] selectAll: tabela inválida {
+    "modulo": "config"
+}
+[2025-12-13 18:18:11] Falha ao inserir registro {
+    "modulo": "veiculos",
+    "data": {
+        "cliente_id": "",
+        "placa": "teste",
+        "modelo": "teste",
+        "cor": "teste",
+        "combustivel": "teste",
+        "ano": "1950"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste' for key 'placa'"
+}
+[2025-12-13 18:33:15] Falha ao inserir registro {
+    "modulo": "veiculos",
+    "data": {
+        "cliente_id": "",
+        "placa": "naotarepetido",
+        "modelo": "teste",
+        "cor": "teste",
+        "combustivel": "teste",
+        "ano": "1985"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`skyline`.`veiculos`, CONSTRAINT `veiculos_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `clientes` (`id`) ON DELETE CASCADE)"
+}
+[2025-12-13 18:38:00] Falha ao inserir registro {
+    "modulo": "veiculos",
+    "data": {
+        "cliente_id": "7",
+        "placa": "teste3",
+        "modelo": "teste",
+        "cor": "teste",
+        "combustivel": "teste",
+        "ano": "teste"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste3' for key 'placa'"
+}
+[2025-12-13 18:38:14] Falha ao inserir registro {
+    "modulo": "veiculos",
+    "data": {
+        "cliente_id": "7",
+        "placa": "teste3",
+        "modelo": "teste",
+        "cor": "teste",
+        "combustivel": "teste",
+        "ano": "teste"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste3' for key 'placa'"
+}
+[2025-12-16 15:44:24] Falha ao inserir registro {
+    "modulo": "clientes",
+    "data": {
+        "id": "1",
+        "nome": "test",
+        "email": "editado?",
+        "telefone": "teste",
+        "cpf": "teste",
+        "data_cadastro": "0000-00-00 00:00:00"
+    },
+    "sql": "INSERT INTO clientes (nome, email, telefone, cpf, data_cadastro) VALUES (?, ?, ?, ?, ?)",
+    "values": [
+        "test",
+        "editado?",
+        "teste",
+        "teste",
+        "0000-00-00 00:00:00"
+    ],
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste' for key 'cpf'"
+}
+[2025-12-16 15:44:34] Falha ao inserir registro {
+    "modulo": "clientes",
+    "data": {
+        "id": "1",
+        "nome": "test",
+        "email": "editado?",
+        "telefone": "teste",
+        "cpf": "teste",
+        "data_cadastro": "0000-00-00 00:00:00"
+    },
+    "sql": "INSERT INTO clientes (nome, email, telefone, cpf, data_cadastro) VALUES (?, ?, ?, ?, ?)",
+    "values": [
+        "test",
+        "editado?",
+        "teste",
+        "teste",
+        "0000-00-00 00:00:00"
+    ],
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste' for key 'cpf'"
+}
+[2025-12-16 18:54:38] generateTable: tabela inválida {
+    "modulo": "itens_servico"
+}
+[2025-12-19 18:47:02] Falha ao inserir registro {
+    "modulo": "clientes",
+    "data": {
+        "id": "",
+        "nome": "testeaaaaa",
+        "email": "editado??",
+        "telefone": "sera",
+        "cpf": "teste"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'editado??' for key 'email'"
+}
+[2025-12-19 18:49:59] Falha ao inserir registro {
+    "modulo": "clientes",
+    "data": {
+        "id": "",
+        "nome": "testeaaaaa",
+        "email": "tesete",
+        "telefone": "teste",
+        "cpf": "teste"
+    },
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'teste' for key 'cpf'"
+}
+[2025-12-23 14:53:11] generateTable: tabela inválida {
+    "modulo": "custom"
+}
+[2026-01-14 19:49:27] dropTable: tentativa de deletar tabela inválida {
+    "table": "testeeeeee"
+}
+[2026-01-14 19:49:29] dropTable: tentativa de deletar tabela inválida {
+    "table": "testeeeeee"
+}
+[2026-01-19 13:23:38] Erro ao conectar ao banco de dados. Verifique se o banco existe. {
+    "exception": {}
+}
+[2026-01-19 14:14:01] Erro ao dropar tabela {
+    "table": "clientes",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 14:14:02] Erro ao dropar tabela {
+    "table": "clientes",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 14:53:12] Erro ao dropar tabela {
+    "table": "clientes",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 15:28:46] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:29:04] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:31:22] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:32:17] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:32:25] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:32:29] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:34:04] generateTable: tabela inválida {
+    "modulo": "veiculos"
+}
+[2026-01-19 15:34:09] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:36:41] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:36:49] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:36:58] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:37:11] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 15:44:03] dropTable: tentativa de deletar tabela inválida {
+    "table": "veiculos"
+}
+[2026-01-19 17:45:38] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:46:09] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:47:05] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:48:36] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:48:44] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:49:32] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:52:51] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:53:07] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:53:12] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}
+[2026-01-19 17:56:51] Erro ao dropar tabela {
+    "table": "tasks",
+    "exception": "SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails"
+}

@@ -1,0 +1,15 @@
+    .container {
+        margin: 5vw;
+        display: flex;
+        flex-direction: column;
+        padding: 5vw;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .content-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2vw;
+        width: 100%;
+    }
