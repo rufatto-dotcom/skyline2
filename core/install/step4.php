@@ -9,18 +9,18 @@ flush();
 require_once dirname(__DIR__, 1) . '/config/actions/generateModules.php';
 flush();
 
-$lockFile = dirname(__DIR__, 2) . '/storage/install.lock';
+$storageDir = dirname(__DIR__, 2) . '/storage';
 
-if (file_exists($lockFile)) {
-    unlink($lockFile);
+if (!is_dir($storageDir)) {
+    mkdir($storageDir, 0777, true);
 }
 
-if (!file_exists($lockFile)) {
-    file_put_contents($lockFile, json_encode([
-        'installed_at' => date('Y-m-d H:i:s'),
-        'version' => '1.0.0'
-    ], JSON_PRETTY_PRINT));
-}
+$lockFile = $storageDir . '/install.lock';
+
+file_put_contents($lockFile, json_encode([
+    'installed_at' => date('Y-m-d H:i:s'),
+    'version' => '1.0.0'
+], JSON_PRETTY_PRINT));
 
 echo "<h2>✔ Configuração concluída</h2>";
 echo "<a href='?modulo=studio'>Ir para o Studio</a>";
