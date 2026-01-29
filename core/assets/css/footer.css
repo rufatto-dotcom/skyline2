@@ -1,5 +1,6 @@
     .footer-container {
         width: 100%;
+        margin-top: 5vw !important;
         display: flex;
         justify-content: center;
         padding: 15px 20px;
@@ -8,7 +9,6 @@
     }
 
     .footer-panel {
-        margin-top: 5vw !important;
         display: flex;
         align-items: center;
         flex-direction: column;
