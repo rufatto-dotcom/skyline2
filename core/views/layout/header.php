@@ -49,7 +49,7 @@ $overflow = array_slice($tabelas, $maxVisible);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="core/assets/css/header.php">
+    <link rel="stylesheet" href="core/assets/css/header.css">
     <script src="core/assets/js/moduleBase.js"></script>
 
     <title><?= htmlspecialchars($layoutData['app']['nome']) ?></title>
