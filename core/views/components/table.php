@@ -10,7 +10,7 @@ $total = $dao->countAll($modulo);
 $totalPages = (int) ceil($total / $perPage);
 ?>
 
-<link rel="stylesheet" href="core/assets/css/table.php">
+<link rel="stylesheet" href="core/assets/css/table.css">
 
 <div class="list-view">
     <div class="container">
