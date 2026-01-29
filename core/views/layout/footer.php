@@ -1,4 +1,4 @@
-    <link rel="stylesheet" href="core/assets/css/footer.php">
+    <link rel="stylesheet" href="core/assets/css/footer.css">
 <div class="footer-container">
     <div class="footer-panel">
         <div class="footer-info">
