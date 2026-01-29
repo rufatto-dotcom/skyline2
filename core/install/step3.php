@@ -1,5 +1,6 @@
 <?php
 require_once dirname(__DIR__, 1) . '/dao/DAO.php';
+require_once dirname(__DIR__, 1) . '/utils.php';
 $dao = new DAO();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
