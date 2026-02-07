@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 "    ]\n" .
                 ");\n";
 
-            $configPath = dirname(__DIR__, 1) . '/config/database.connection.php';
+            $configPath = __DIR__ . '/../config/database.connection.php';
 
             file_put_contents($configPath, $configCode);
 
@@ -59,4 +59,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input name="user" placeholder="Usuário" value="<?= htmlspecialchars($_POST['user'] ?? '') ?>" required>
     <input name="pass" type="password" placeholder="Senha" value="<?= htmlspecialchars($_POST['pass'] ?? '') ?>">
     <button type="submit">Conectar e Finalizar Instalação</button>
+
 </form>
