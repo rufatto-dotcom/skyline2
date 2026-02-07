@@ -128,10 +128,7 @@ function regenerateModules(): void
 
     $jsonFiles = glob(dirname(__DIR__, 3) . '/metadata/*.json');
     foreach ($jsonFiles as $jsonFile) {
-        // Pula reports.json
-        if (basename($jsonFile) === 'reports.json') {
-            continue;
-        }
         generateModule($jsonFile, $log);
     }
+
 }
